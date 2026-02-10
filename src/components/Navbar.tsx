@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/silkaptr-logo.jpg";
+import logo from "@/assets/silkaptr-icon-flat.png";
 
 const navLinks = [
   { label: "Methodology", href: "#methodology" },
