@@ -1,4 +1,4 @@
-import logo from "@/assets/silkaptr-logo.jpg";
+import logo from "@/assets/silkaptr-icon-flat.png";
 
 export const Footer = () => {
   return (
