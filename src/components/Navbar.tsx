@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Shield, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/silkaptr-logo.jpg";
 
 const navLinks = [
   { label: "Methodology", href: "#methodology" },
@@ -8,6 +9,11 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
+
+const scrollToSection = (href: string) => {
+  const el = document.querySelector(href);
+  el?.scrollIntoView({ behavior: "smooth" });
+};
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,8 +39,12 @@ export const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <Shield className="w-8 h-8 text-primary transition-all duration-300 group-hover:drop-shadow-[0_0_10px_hsl(var(--cyber-cyan))]" />
+          <a
+            href="#"
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+            className="flex items-center gap-2 group"
+          >
+            <img src={logo} alt="SilKaptr" className="w-9 h-9 rounded-md object-cover transition-all duration-300 group-hover:drop-shadow-[0_0_10px_hsl(var(--cyber-cyan))]" />
             <span className="text-xl font-bold tracking-tight">
               Sil<span className="gradient-text">Kaptr</span>
             </span>
@@ -46,6 +56,7 @@ export const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium glitch-hover"
               >
                 {link.label}
@@ -56,6 +67,7 @@ export const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
+              onClick={() => scrollToSection("#contact")}
               className="bg-cyber-gradient text-primary-foreground font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--cyber-cyan)/0.5)]"
             >
               Secure Your Assets
@@ -84,12 +96,13 @@ export const Navbar = () => {
                   key={link.label}
                   href={link.href}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => { e.preventDefault(); scrollToSection(link.href); setIsMobileMenuOpen(false); }}
                 >
                   {link.label}
                 </a>
               ))}
               <Button
+                onClick={() => { scrollToSection("#contact"); setIsMobileMenuOpen(false); }}
                 className="bg-cyber-gradient text-primary-foreground font-semibold mt-2"
               >
                 Secure Your Assets

@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
 
+const scrollToSection = (href: string) => {
+  const el = document.querySelector(href);
+  el?.scrollIntoView({ behavior: "smooth" });
+};
+
 export const CTASection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
@@ -51,6 +56,7 @@ export const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
+              onClick={() => scrollToSection("#contact")}
               className="bg-cyber-gradient text-primary-foreground font-semibold text-lg px-8 py-6 hover:opacity-90 transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--cyber-cyan)/0.5)] group"
             >
               <Calendar className="mr-2 w-5 h-5" />
@@ -60,6 +66,7 @@ export const CTASection = () => {
             <Button
               size="lg"
               variant="outline"
+              onClick={() => scrollToSection("#contact")}
               className="border-primary/50 text-foreground hover:bg-primary/10 font-semibold text-lg px-8 py-6"
             >
               Request Assessment

@@ -1,4 +1,4 @@
-import { Shield } from "lucide-react";
+import logo from "@/assets/silkaptr-logo.jpg";
 
 export const Footer = () => {
   return (
@@ -7,8 +7,8 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="md:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
-              <Shield className="w-8 h-8 text-primary" />
+            <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="SilKaptr" className="w-8 h-8 rounded-md object-cover" />
               <span className="text-xl font-bold tracking-tight">
                 Sil<span className="gradient-text">Kaptr</span>
               </span>
