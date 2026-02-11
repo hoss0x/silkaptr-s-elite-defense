@@ -1,15 +1,15 @@
 import { Check, X } from "lucide-react";
 
 const traditionalItems = [
-  "Static scanning",
-  "Noisy alerts",
-  "Single-vulnerability focus",
+  "Checks known signatures only",
+  "Floods you with false positives",
+  "Finds isolated bugs, misses the bigger picture",
 ];
 
 const silkaptrItems = [
-  "Dynamic emulation",
-  "Stealth operations",
-  "Full attack-chain awareness",
+  "Understands application logic and flows",
+  "Every finding validated — zero false positives",
+  "Maps how vulnerabilities chain and compound",
 ];
 
 export const ProblemSolutionSection = () => {
@@ -22,11 +22,11 @@ export const ProblemSolutionSection = () => {
             METHODOLOGY
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            The Old Way vs. <span className="gradient-text">The SilKaptr Way</span>
+            Scanners vs. <span className="gradient-text">SilKaPtr</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Traditional security tools only scratch the surface. We dive deep into your attack surface
-            with the same techniques used by nation-state adversaries.
+            Traditional scanners check for known signatures. SilKaPtr finds complex, chained
+            vulnerabilities that surface-level tools completely miss.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export const ProblemSolutionSection = () => {
               ))}
             </ul>
             <p className="mt-6 text-sm text-muted-foreground/70 font-mono">
-              // Reactive approach with limited depth
+              // Days of manual work, noisy results
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export const ProblemSolutionSection = () => {
               ))}
             </ul>
             <p className="mt-6 text-sm text-primary/70 font-mono">
-              // Proactive simulation with full coverage
+              // Hours, not days — validated results only
             </p>
           </div>
         </div>
@@ -79,8 +79,8 @@ export const ProblemSolutionSection = () => {
         <div className="mt-16 text-center">
           <div className="inline-block p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border">
             <p className="text-lg md:text-xl font-medium">
-              Go beyond simple compliance.{" "}
-              <span className="gradient-text font-bold">Experience a true Red Team operation.</span>
+              What takes a human team days,{" "}
+              <span className="gradient-text font-bold">SilKaPtr delivers in hours.</span>
             </p>
           </div>
         </div>

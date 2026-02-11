@@ -3,27 +3,27 @@ import { Brain, Target, ShieldCheck, Radar } from "lucide-react";
 const capabilities = [
   {
     icon: Brain,
-    title: "Adaptive Intelligence",
+    title: "Understands Your Application",
     description:
-      "Our AI agents don't just follow a script; they reason and adapt to your specific environment to find valid entry points.",
+      "SilKaPtr doesn't just scan — it reasons about your application's logic, flows, and business rules to find vulnerabilities others miss.",
   },
   {
     icon: Target,
-    title: "Full Kill-Chain Simulation",
+    title: "Chained Vulnerability Discovery",
     description:
-      "We go beyond simple detection. We map the entire attack path from initial access to privilege escalation and lateral movement.",
+      "We don't just find isolated bugs. SilKaPtr maps how vulnerabilities connect and compound into real attack paths.",
   },
   {
     icon: ShieldCheck,
-    title: "Zero-False Positives",
+    title: "Validated Results Only",
     description:
-      "Every finding is verified by specialized validation agents. We filter out the noise so you can focus on real risks.",
+      "Every finding is independently confirmed before it reaches your report. No false positives. No noise. Only real, exploitable vulnerabilities.",
   },
   {
     icon: Radar,
-    title: "Advanced Evasion Engine",
+    title: "Machine Speed Delivery",
     description:
-      "Built to bypass modern WAFs. Our system analyzes blocked requests and dynamically mutates payloads to evade detection.",
+      "What takes a human penetration testing team days of manual work, SilKaPtr delivers in hours — with proof and remediation steps.",
   },
 ];
 
@@ -37,11 +37,11 @@ export const CapabilitiesSection = () => {
             CAPABILITIES
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Engineered for <span className="gradient-text">Maximum Impact</span>
+            Built for <span className="gradient-text">Depth & Precision</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Our platform combines cutting-edge AI with battle-tested offensive security techniques
-            to deliver unparalleled depth and accuracy.
+            An AI-powered platform that combines the intuition of elite pentesters
+            with the speed and scale of intelligent automation.
           </p>
         </div>
 

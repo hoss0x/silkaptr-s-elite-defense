@@ -3,21 +3,21 @@ import { Users, Eye, FileText } from "lucide-react";
 const pillars = [
   {
     icon: Users,
-    title: "Operated by Security Experts",
+    title: "Elite-Level Depth",
     description:
-      "We are not a passive tool. We are a team of offensive security specialists armed with proprietary AI technology.",
+      "SilKaPtr delivers the same depth and intuition as a world-class human penetration tester — without the wait or the cost.",
   },
   {
     icon: Eye,
-    title: "Stealth & Precision",
+    title: "Beyond Surface-Level",
     description:
-      "We operate without disrupting your business continuity. Our methods are designed to be invisible to your existing defenses.",
+      "We don't check signatures. We understand your application's logic, map its attack surface, and find complex chained vulnerabilities.",
   },
   {
     icon: FileText,
-    title: "Actionable Reporting",
+    title: "Proof & Remediation",
     description:
-      "Get executive summaries for leadership and developer-ready fix guides for your engineering team. No more vague findings.",
+      "Every vulnerability comes with exploitation proof and developer-ready remediation steps. No vague findings, no guesswork.",
   },
 ];
 
@@ -34,11 +34,11 @@ export const WhyChooseUsSection = () => {
             WHY SILKAPTR
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Trust the <span className="gradient-text">Experts</span>
+            Why <span className="gradient-text">SilKaPtr</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We're not just another security scanner. We're your dedicated red team partner,
-            bringing human expertise enhanced by artificial intelligence.
+            Not another scanner. An AI-powered security assessment platform
+            that thinks like a hacker and reports like a consultant.
           </p>
         </div>
 
