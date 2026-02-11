@@ -1,31 +1,22 @@
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
-import { ProblemSolutionSection } from "@/components/ProblemSolutionSection";
-import { CapabilitiesSection } from "@/components/CapabilitiesSection";
-import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
-import { CTASection } from "@/components/CTASection";
+import { ProductSection } from "@/components/ProductSection";
+import { ApproachSection } from "@/components/ApproachSection";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* Dynamic Particle Background */}
       <ParticleBackground />
-
-      {/* Navigation */}
       <Navbar />
-
-      {/* Main Content */}
       <main className="relative z-10">
         <HeroSection />
-        <ProblemSolutionSection />
-        <CapabilitiesSection />
-        <WhyChooseUsSection />
-        <CTASection />
+        <ProductSection />
+        <ApproachSection />
+        <ContactSection />
       </main>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

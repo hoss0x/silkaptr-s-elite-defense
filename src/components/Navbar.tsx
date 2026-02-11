@@ -4,9 +4,9 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/silkaptr-icon-flat.png";
 
 const navLinks = [
-  { label: "Methodology", href: "#methodology" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
+  { label: "Product", href: "#product" },
+  { label: "Approach", href: "#approach" },
+  { label: "Pricing", href: "#pricing" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -70,7 +70,7 @@ export const Navbar = () => {
               onClick={() => scrollToSection("#contact")}
               className="bg-cyber-gradient text-primary-foreground font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--cyber-cyan)/0.5)]"
             >
-              Secure Your Assets
+              Request a demo
             </Button>
           </div>
 
@@ -105,7 +105,7 @@ export const Navbar = () => {
                 onClick={() => { scrollToSection("#contact"); setIsMobileMenuOpen(false); }}
                 className="bg-cyber-gradient text-primary-foreground font-semibold mt-2"
               >
-                Secure Your Assets
+                Request a demo
               </Button>
             </div>
           </div>
