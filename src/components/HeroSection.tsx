@@ -54,20 +54,20 @@ export const HeroSection = () => {
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="font-mono text-xs text-muted-foreground tracking-wider">
-              AI-AUGMENTED RED TEAM OPERATIONS
+              AI-POWERED SECURITY ASSESSMENT
             </span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Next-Generation
+            Deeper Than Any Scanner.
             <br />
-            <span className="gradient-text">Adversary Emulation.</span>
+            <span className="gradient-text">Faster Than Any Team.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            We don't just scan. We simulate advanced persistent threats to expose the vulnerabilities others miss.{" "}
+            SilKaPtr understands your application — its logic, its flows, its weaknesses.{" "}
             <span className="text-foreground font-medium">
-              The precision of AI, the strategy of elite human hackers.
+              The depth of an elite pentester, delivered at machine speed.
             </span>
           </p>
 

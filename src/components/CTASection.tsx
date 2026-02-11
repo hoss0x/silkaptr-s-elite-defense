@@ -41,15 +41,15 @@ export const CTASection = () => {
 
           {/* Headline */}
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Don't Wait for a Breach.
+            Stop Guessing.
             <br />
-            <span className="gradient-text">Find It First.</span>
+            <span className="gradient-text">Start Knowing.</span>
           </h2>
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Join the organizations that have moved beyond compliance checkboxes to real-world threat simulation.
-            Let's discuss how we can strengthen your security posture.
+            See what a real security assessment looks like — validated findings,
+            chained attack paths, and actionable remediation. In hours, not weeks.
           </p>
 
           {/* CTA Buttons */}
