@@ -10,8 +10,8 @@ export const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: integrate form submission
-    console.log("Demo requested:", { name, email, company });
+    const mailtoLink = `mailto:hossam@silkaptr.com?subject=Demo Request from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company}`)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
