@@ -33,10 +33,6 @@ const extras = [
     description: "Find complex attack paths that single-point scanners miss entirely.",
   },
   {
-    title: "CI/CD integration",
-    description: "Seamlessly integrate with your existing deployment pipelines.",
-  },
-  {
     title: "Evidence-based reporting",
     description: "Every vulnerability includes proof-of-concept and remediation guidance.",
   },

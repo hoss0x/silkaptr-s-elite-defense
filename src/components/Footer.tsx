@@ -22,10 +22,10 @@ export const Footer = () => {
           {/* Links */}
           <div className="flex gap-12 text-sm">
             <div className="space-y-3">
-              <a href="mailto:hello@silkaptr.io" className="text-muted-foreground hover:text-primary transition-colors block">
+              <a href="mailto:hello@silkaptr.com" className="text-muted-foreground hover:text-primary transition-colors block">
                 Email us
               </a>
-              <p className="text-muted-foreground">hello@silkaptr.io</p>
+              <p className="text-muted-foreground">hello@silkaptr.com</p>
             </div>
             <div className="space-y-3">
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors block">
