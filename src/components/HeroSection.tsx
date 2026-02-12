@@ -25,12 +25,12 @@ export const HeroSection = () => {
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="font-mono text-xs text-muted-foreground tracking-wider">
-              AI-POWERED ASSESSMENT
+              AI-POWERED PENETRATION TESTING
             </span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Security assessment
+            Penetration testing
             <br />
             <span className="gradient-text">at the speed of silicon.</span>
           </h1>
