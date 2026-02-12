@@ -11,7 +11,13 @@ export const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const mailtoLink = `mailto:hossam@silkaptr.com?subject=Demo Request from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company}`)}`;
-    window.location.href = mailtoLink;
+    const link = document.createElement("a");
+    link.href = mailtoLink;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
